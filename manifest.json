@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Extension Manifest V3 Starter Kit",
+  "version": "1.0.0",
+  "description": "Production-ready, battle-tested Chrome Extension Manifest V3 boilerplate with Popup, Background Service Worker, Content Scripts, and Chrome Storage.",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "contextMenus"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Launch Extension"
+  },
+  "background": {
+    "service_worker": "scripts/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["scripts/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

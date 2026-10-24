@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V3 Starter Extension</title>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="badge">Manifest V3 Ready</div>
+      <h1 class="title">Extension Starter</h1>
+      <p class="subtitle">Quick boiler-kit for modern extensions</p>
+    </div>
+
+    <!-- Main Card -->
+    <div class="card">
+      <div class="stat-row">
+        <span>Current Active Tab</span>
+        <strong id="tab-domain">Detecting...</strong>
+      </div>
+      <div class="stat-row">
+        <span>Clicks Saved</span>
+        <strong id="click-counter">0</strong>
+      </div>
+
+      <button id="action-btn" class="btn btn-primary">
+        ⚡ Inspect Page & Save
+      </button>
+
+      <button id="highlight-btn" class="btn btn-secondary">
+        🎨 Highlight Active Page
+      </button>
+    </div>
+
+    <!-- Status message -->
+    <div id="status-msg" class="status-msg"></div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <span>Built with Manifest V3</span>
+      <a href="https://github.com/Shahabuddin-mahar" target="_blank">By Shahabuddin Mahar</a>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
